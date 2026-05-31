@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 190" role="img" aria-label="Rivesa Satria Tisaga logo">
+  <rect width="520" height="190" fill="none"/>
+  <g transform="translate(176 8)">
+    <path d="M78 0 C48 25 25 53 0 85 C46 79 83 67 116 48 C101 34 89 18 78 0Z" fill="#0f5da7"/>
+    <path d="M99 0 C77 25 54 48 25 73 C62 68 98 58 128 41 C118 29 108 14 99 0Z" fill="#317fc5"/>
+    <path d="M122 4 C105 24 84 42 59 62 C88 60 117 54 142 43 C136 32 130 18 122 4Z" fill="#7aa6cf"/>
+    <path d="M143 37 L186 47 L186 65 L86 65 C109 58 128 49 143 37Z" fill="#9a9c9f"/>
+  </g>
+  <text x="260" y="132" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#3d3f42">RIVESA SATRIA TISAGA</text>
+  <text x="260" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#65676b">The Future is Trust and Synergy</text>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tisagacorp.co.id/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tisagacorp.co.id/rivesa</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tisagacorp.co.id/rivesa-organization</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tisagacorp.co.id/tle</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tisagacorp.co.id/tle-product</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tisagacorp.co.id/tle-organization</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

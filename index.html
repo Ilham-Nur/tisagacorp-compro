@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TisagaCorp | Marine, Energy & Industrial Services Group</title>
+    <meta
+      name="description"
+      content="TisagaCorp menaungi PT Rivesa Satria Tisaga dan PT Tisaga Lapandua Energi untuk layanan marine, shipyard, fabrication, electrical, instrumentation, energy support, dan manpower supply."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f7fa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TisagaCorp" />
+    <meta property="og:title" content="TisagaCorp | Marine, Energy & Industrial Services Group" />
+    <meta property="og:url" content="https://tisagacorp.co.id/" />
+    <meta
+      property="og:description"
+      content="Gateway company profile untuk PT Rivesa Satria Tisaga dan PT Tisaga Lapandua Energi."
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://tisagacorp.co.id/" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TisagaCorp",
+        "description": "Group company for marine, shipyard, construction, fabrication, electrical, instrumentation, energy support, and manpower supply services.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mega Legenda Blok D3 No. 26, Baloi Permai",
+          "addressLocality": "Batam Kota",
+          "addressRegion": "Kepulauan Riau",
+          "addressCountry": "ID"
+        },
+        "subOrganization": [
+          { "@type": "Organization", "name": "PT Rivesa Satria Tisaga" },
+          { "@type": "Organization", "name": "PT Tisaga Lapandua Energi" }
+        ]
+      }
+    </script>
+  </head>
+  <body class="corp-page simple-corp-page" data-page="group">
+    <div class="landing-background" aria-hidden="true">
+      <span class="landing-bg-slide"></span>
+      <span class="landing-bg-slide"></span>
+      <span class="landing-bg-slide"></span>
+      <span class="landing-bg-slide"></span>
+    </div>
+
+    <main>
+      <section class="simple-hero">
+        <div class="simple-hero-inner">
+          <h1>TISAGACORP</h1>
+          <p class="simple-hero-copy">
+            Integrated services for
+            <span
+              class="typed-text"
+              data-phrases="marine and shipyard projects|construction and fabrication work|electrical and instrumentation support|energy and industrial manpower"
+              aria-live="polite"
+            >marine and shipyard projects</span><span class="typing-caret" aria-hidden="true"></span>
+          </p>
+          <p class="gateway-capabilities">Marine • Shipyard • Construction • Fabrication • Electrical • Manpower</p>
+        </div>
+      </section>
+
+      <section class="simple-company-section" aria-label="Company profile navigation">
+        <a class="simple-company-card" href="/rivesa">
+          <span class="company-accent"></span>
+          <img class="company-card-logo rivesa-card-logo" src="assets/rivesa-logo.svg" alt="Rivesa Satria Tisaga logo" />
+          <h2>Rivesa Satria Tisaga</h2>
+          <p>Marine service, new shipbuilding, fabrication, construction, repair and manpower supply.</p>
+          <ul>
+            <li>Marine & shipyard services</li>
+            <li>Fabrication and construction</li>
+            <li>Manpower supply</li>
+          </ul>
+          <strong>View Rivesa profile</strong>
+        </a>
+
+        <a class="simple-company-card" href="/tle">
+          <span class="company-accent"></span>
+          <img class="company-card-logo tle-card-logo" src="assets/tle-logo-transparent.png" alt="Tisaga Lapandua Energi logo" />
+          <h2>Tisaga Lapandua Energi</h2>
+          <p>Marine electrical, MSB panel, vessel installation, load bank test and commissioning.</p>
+          <ul>
+            <li>Marine electrical works</li>
+            <li>MSB panel and installation</li>
+            <li>Testing and commissioning</li>
+          </ul>
+          <strong>View TLE profile</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="simple-footer">
+      <div>
+        <strong>TisagaCorp</strong>
+        <span>Integrated marine, energy and industrial services group.</span>
+      </div>
+      <div class="simple-footer-contact">
+        <div>
+          <span>Office Address</span>
+          <address>
+            Mega Legenda Blok D3 No. 26, Baloi Permai, Batam Kota, Kepulauan Riau, Indonesia.
+          </address>
+        </div>
+        <div>
+          <span>Company Email</span>
+          <a href="mailto:rivesasatriatisaga@tisagacorp.co.id">PT Rivesa Satria Tisaga - rivesasatriatisaga@tisagacorp.co.id</a>
+          <a href="mailto:tisaga82energi@tisagacorp.co.id">PT Tisaga Lapandua Energi - tisaga82energi@tisagacorp.co.id</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const target = document.querySelector(".typed-text");
+
+        if (!target) {
+          return;
+        }
+
+        const phrases = target.dataset.phrases.split("|").filter(Boolean);
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (reduceMotion || phrases.length < 2) {
+          target.textContent = phrases[0] || target.textContent;
+          return;
+        }
+
+        let phraseIndex = 0;
+        let letterIndex = phrases[0].length;
+        let deleting = true;
+
+        const type = () => {
+          const phrase = phrases[phraseIndex];
+          target.textContent = phrase.slice(0, letterIndex);
+
+          if (!deleting && letterIndex === phrase.length) {
+            deleting = true;
+            window.setTimeout(type, 1600);
+            return;
+          }
+
+          if (deleting && letterIndex === 0) {
+            deleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            window.setTimeout(type, 320);
+            return;
+          }
+
+          letterIndex += deleting ? -1 : 1;
+          window.setTimeout(type, deleting ? 34 : 58);
+        };
+
+        window.setTimeout(type, 1200);
+      })();
+    </script>
+  </body>
+</html>
