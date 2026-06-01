@@ -345,7 +345,7 @@ textarea {
   min-height: 100svh;
   background:
     linear-gradient(90deg, rgba(15, 26, 38, 0.97) 0%, rgba(21, 40, 60, 0.9) 48%, rgba(34, 49, 62, 0.74) 100%),
-    url("assets/hero-switchboard.png") center / cover;
+    url("assets/hero-switchboard.webp") center / cover;
 }
 
 .rivesa-hero .hero-video {
@@ -365,7 +365,7 @@ textarea {
   z-index: 1;
   width: min(38vw, 520px);
   aspect-ratio: 520 / 190;
-  background: url("assets/rivesa-logo.svg") center / contain no-repeat;
+  background: url("assets/rivesa-logo-transparent.webp") center / contain no-repeat;
   opacity: 0.16;
   filter: brightness(1.25) saturate(1.12);
 }
@@ -552,7 +552,7 @@ body[data-page="rivesa"] .hero-content {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(8, 19, 14, 0.94), rgba(8, 19, 14, 0.7) 48%, rgba(8, 19, 14, 0.35)),
-    url("assets/hero-switchboard.png") center / cover;
+    url("assets/hero-switchboard.webp") center / cover;
 }
 
 .page-hero::after {
@@ -713,7 +713,7 @@ body[data-page="tle"] #services .service-card::after {
 }
 
 body[data-page="tle"] #services .service-card::before {
-  background: url("assets/hero-switchboard.png") center / cover no-repeat;
+  background: url("assets/hero-switchboard.webp") center / cover no-repeat;
   filter: saturate(0.9) brightness(0.78);
   transition:
     transform 1100ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -831,15 +831,15 @@ body[data-page="rivesa"] #services .service-card::before {
 }
 
 body[data-page="rivesa"] #services .service-card:nth-child(1) {
-  --rivesa-service-bg: url("assets/img-layanan-rivesa/marine_n_shipbuilding.png");
+  --rivesa-service-bg: url("assets/img-layanan-rivesa/marine_n_shipbuilding.webp");
 }
 
 body[data-page="rivesa"] #services .service-card:nth-child(2) {
-  --rivesa-service-bg: url("assets/img-layanan-rivesa/fabrication_contructon.png");
+  --rivesa-service-bg: url("assets/img-layanan-rivesa/fabrication_contructon.webp");
 }
 
 body[data-page="rivesa"] #services .service-card:nth-child(3) {
-  --rivesa-service-bg: url("assets/img-layanan-rivesa/manpower.png");
+  --rivesa-service-bg: url("assets/img-layanan-rivesa/manpower.webp");
 }
 
 body[data-page="rivesa"] #services .service-card::after {
@@ -973,7 +973,7 @@ body[data-page="rivesa"] #services .service-card:focus-within .service-card-deta
   inset: 0;
   background:
     linear-gradient(180deg, rgba(18, 37, 29, 0.38), rgba(18, 37, 29, 0.92)),
-    url("assets/hero-switchboard.png") center / cover;
+    url("assets/hero-switchboard.webp") center / cover;
   content: "";
   opacity: 0.74;
 }
@@ -1312,7 +1312,7 @@ body[data-page="rivesa"] .vision-mission p:not(.vision-large-label) {
 .rivesa-page-hero {
   background:
     linear-gradient(90deg, rgba(13, 21, 31, 0.9), rgba(13, 21, 31, 0.52)),
-    url("assets/hero-switchboard.png") center / cover;
+    url("assets/hero-switchboard.webp") center / cover;
 }
 
 body[data-page="rivesa"] .rivesa-structure-preview {
@@ -2517,7 +2517,7 @@ footer {
   border-bottom: 1px solid var(--corp-line);
   background:
     linear-gradient(90deg, rgba(12, 18, 24, 0.98), rgba(12, 18, 24, 0.82) 48%, rgba(12, 18, 24, 0.58)),
-    url("assets/hero-switchboard.png") center / cover;
+    url("assets/hero-switchboard.webp") center / cover;
 }
 
 .corp-hero-pattern {
@@ -2818,22 +2818,22 @@ footer {
 }
 
 .landing-bg-slide:nth-child(1) {
-  --landing-image: url("assets/img-landingpage/image-1.png");
+  --landing-image: url("assets/img-landingpage/image-1.webp");
   animation-delay: -1.5s;
 }
 
 .landing-bg-slide:nth-child(2) {
-  --landing-image: url("assets/img-landingpage/image-2.png");
+  --landing-image: url("assets/img-landingpage/image-2.webp");
   animation-delay: 4.5s;
 }
 
 .landing-bg-slide:nth-child(3) {
-  --landing-image: url("assets/img-landingpage/image-3.png");
+  --landing-image: url("assets/img-landingpage/image-3.webp");
   animation-delay: 10.5s;
 }
 
 .landing-bg-slide:nth-child(4) {
-  --landing-image: url("assets/img-landingpage/image-4.png");
+  --landing-image: url("assets/img-landingpage/image-4.webp");
   animation-delay: 16.5s;
 }
 
@@ -3009,7 +3009,7 @@ footer {
 }
 
 .simple-company-card:first-child {
-  --company-logo: url("assets/rivesa-logo.svg");
+  --company-logo: url("assets/rivesa-logo-transparent.webp");
   --company-logo-opacity: 0.11;
   --company-logo-hover-opacity: 0.16;
   --company-logo-filter: saturate(1.08) brightness(1.04);
@@ -3017,7 +3017,7 @@ footer {
 }
 
 .simple-company-card:nth-child(2) {
-  --company-logo: url("assets/tle-logo-transparent.png");
+  --company-logo: url("assets/tle-logo-transparent.webp");
 }
 
 .simple-company-card > * {
