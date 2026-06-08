@@ -21,7 +21,7 @@ const translations = {
     navHome: "Beranda",
     navAbout: "Tentang",
     navServices: "Layanan",
-    navExperience: "Experience",
+    navExperience: "Pengalaman",
     navProduct: "Portfolio",
     navStructure: "Struktur",
     navContact: "Kontak",
