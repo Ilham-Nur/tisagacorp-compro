@@ -2768,6 +2768,24 @@ body[data-page="rivesa"] .contact-panel .whatsapp-button {
   color: var(--red);
 }
 
+body[data-page^="rivesa"] .company-footer {
+  color: rgba(255, 255, 255, 0.76);
+  border-top-color: rgba(255, 255, 255, 0.12);
+  background: #101820;
+}
+
+body[data-page^="rivesa"] .company-footer strong,
+body[data-page^="rivesa"] .company-footer span,
+body[data-page^="rivesa"] .company-footer address,
+body[data-page^="rivesa"] .company-footer a {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+body[data-page^="rivesa"] .company-footer strong,
+body[data-page^="rivesa"] .company-footer a:hover {
+  color: var(--white);
+}
+
 .footer-contact {
   max-width: 560px;
   text-align: right;
