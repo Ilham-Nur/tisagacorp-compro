@@ -52,10 +52,11 @@
         </span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about" data-i18n="navAbout">Tentang</a>
-        <a href="#services" data-i18n="navServices">Layanan</a>
-        <a href="rivesa-organization.html" data-i18n="navStructure">Struktur</a>
-        <a href="#contact" data-i18n="navContact">Kontak</a>
+        <a href="rivesa.html" class="active" data-i18n="navHome">Beranda</a>
+        <a href="rivesa-about.html" data-i18n="navAbout">Tentang</a>
+        <a href="rivesa-services.html" data-i18n="navServices">Layanan</a>
+        <a href="rivesa-portfolio.html" data-i18n="navProduct">Portfolio</a>
+        <a href="rivesa-contact.html" data-i18n="navContact">Kontak</a>
       </nav>
       <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
         <span></span>
@@ -68,7 +69,7 @@
           <span data-lang-option="en">EN</span>
         </button>
         <a class="header-back" href="index.html" data-i18n="backToTisagaCorp">Back to TisagaCorp</a>
-        <a class="header-cta" href="#contact" data-i18n="ctaConnect">Hubungi</a>
+        <a class="header-cta" href="rivesa-contact.html" data-i18n="ctaConnect">Hubungi</a>
       </div>
     </header>
 
@@ -169,12 +170,17 @@
         </div>
       </section>
 
-      <section class="section org-preview rivesa-structure-preview" id="structure">
-        <div class="org-preview-copy">
-          <div class="section-kicker" data-i18n="orgKicker">Struktur Organisasi</div>
-          <h2 data-i18n="rivesaOrgTitle">Struktur organisasi Rivesa Satria Tisaga.</h2>
-          <p data-i18n="rivesaOrgIntro">Struktur dipimpin oleh board of directors, project management, engineering, support-control, dan production field team.</p>
-          <a class="button primary section-button" href="rivesa-organization.html" data-i18n="orgPreviewCta">Lihat struktur organisasi</a>
+      <section class="section video-preview-section is-hidden" aria-hidden="true" data-video-preview data-video-url="">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker" data-i18n="videoPreviewKicker">Preview Video</div>
+            <h2 data-i18n="videoPreviewTitle">Preview pekerjaan dan aktivitas lapangan.</h2>
+          </div>
+        </div>
+        <div class="video-preview-frame">
+          <div class="video-preview-placeholder">
+            <span data-i18n="videoPreviewPlaceholder">Video belum tersedia</span>
+          </div>
         </div>
       </section>
 
@@ -236,13 +242,20 @@
           <a class="button primary whatsapp-button" href="https://wa.me/628116667313?text=Halo%20PT%20Rivesa%20Satria%20Tisaga%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20fabrikasi%2C%20marine%20service%2C%20ship%20repair%2C%20atau%20manpower." target="_blank" rel="noopener" data-i18n="whatsappButton">Chat via WhatsApp</a>
           <a href="tel:+628116667313">+62 811-6667-313</a>
           <a href="mailto:adminrst@tisagacorp.co.id">adminrst@tisagacorp.co.id</a>
-          <p>Mega Legenda Blok D3 No. 26, Baloi Permai, Batam Kota, Kota Batam</p>
+          <p data-i18n="rivesaContactAddress">Mega Legenda Blok D3 No. 26, Baloi Permai, Batam Kota, Kepulauan Riau, Indonesia</p>
         </div>
       </section>
     </main>
 
-    <footer>
-      <span>PT Rivesa Satria Tisaga</span>
+    <footer class="company-footer">
+      <div>
+        <strong>PT Rivesa Satria Tisaga</strong>
+        <span data-i18n="rivesaBrandTagline">Pembangunan Kapal, Fabrikasi & Layanan Marine</span>
+      </div>
+      <div class="footer-contact">
+        <address data-i18n="rivesaContactAddress">Mega Legenda Blok D3 No. 26, Baloi Permai, Batam Kota, Kepulauan Riau, Indonesia</address>
+        <a href="mailto:adminrst@tisagacorp.co.id">adminrst@tisagacorp.co.id</a>
+      </div>
     </footer>
 
     <script src="script.js?v=20260601-rivesa2"></script>

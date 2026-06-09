@@ -1076,6 +1076,10 @@ body[data-page="tle-about"] .vision-mission article:nth-child(2) {
   padding-top: clamp(28px, 4vw, 48px);
 }
 
+body[data-page="rivesa-about"] .vision-mission article:nth-child(2) {
+  padding-top: clamp(28px, 4vw, 48px);
+}
+
 .vision-mission h2 {
   margin: 0;
   font-size: clamp(1.8rem, 3.4vw, 3.4rem);
@@ -1136,6 +1140,18 @@ body[data-page="tle-about"] .vision-mission article:nth-child(2) {
   border-radius: 8px;
   background: var(--brand-green);
   text-align: center;
+}
+
+body[data-page="rivesa-about"] .tle-board-panel {
+  border-color: #17345e;
+}
+
+body[data-page="rivesa-about"] .tle-director-grid article {
+  background: linear-gradient(100deg, #55d8d4 0%, #0089d2 55%, #005cc5 100%);
+}
+
+body[data-page="rivesa-about"] .function-list article:last-child {
+  grid-column: 1 / -1;
 }
 
 .tle-director-grid strong,
@@ -1217,6 +1233,14 @@ body[data-page="tle-about"] .vision-mission article:nth-child(2) {
   margin: 0;
   padding-left: 20px;
   color: var(--ink);
+}
+
+body[data-page="rivesa-services"] .compact-heading h2 {
+  color: #0f5da7;
+}
+
+body[data-page="rivesa-services"] .tle-service-detail-list h3 {
+  color: #17345e;
 }
 
 .tle-service-detail-list li {
@@ -1555,6 +1579,136 @@ body[data-page="rivesa"] .vision-mission p:not(.vision-large-label) {
   line-height: 1.55;
 }
 
+.rst-portfolio-experience {
+  background:
+    linear-gradient(180deg, #ffffff, rgba(244, 247, 250, 0.92));
+}
+
+.rst-project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.rst-project-list article {
+  min-height: 124px;
+  padding: 22px;
+  background: var(--white);
+}
+
+.rst-project-list article:nth-child(4n + 2),
+.rst-project-list article:nth-child(4n + 3) {
+  background: var(--soft);
+}
+
+.rst-project-list span {
+  display: none;
+}
+
+.rst-project-list h3,
+.rst-project-list p {
+  margin: 0;
+}
+
+.rst-project-list h3 {
+  color: #17345e;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.rst-project-list p {
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.rst-gallery-section {
+  background: var(--brand-green-dark);
+  color: var(--white);
+}
+
+.rst-gallery-section .section-heading p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.rst-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 220px;
+  gap: 14px;
+}
+
+.rst-gallery-item {
+  position: relative;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #111821;
+}
+
+.rst-gallery-feature,
+.rst-gallery-wide,
+.rst-gallery-video {
+  grid-column: span 2;
+}
+
+.rst-gallery-feature {
+  grid-row: span 2;
+}
+
+.rst-gallery-item img,
+.rst-gallery-item video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rst-gallery-video video {
+  background: #000000;
+}
+
+.rst-gallery-item figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 28px 16px 14px;
+  color: var(--white);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.72));
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.rst-gallery-video figcaption {
+  top: 0;
+  bottom: auto;
+  padding: 14px 16px 28px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent);
+  pointer-events: none;
+}
+
+.rst-video-open {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  min-height: 34px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--white);
+  background: rgba(15, 93, 167, 0.9);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.rst-video-open:hover {
+  background: #073f73;
+}
+
 .rivesa-structure-preview {
   display: grid;
   place-items: center;
@@ -1679,6 +1833,221 @@ body[data-page="rivesa"] .vision-mission p:not(.vision-large-label) {
     url("assets/hero-switchboard.webp") center / cover;
 }
 
+.lucidchart-embed {
+  width: min(1180px, 100%);
+  margin: 0 auto 64px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 24px 60px rgba(12, 31, 48, 0.1);
+}
+
+.lucidchart-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 16px;
+  color: var(--steel);
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.lucidchart-toolbar strong {
+  font-size: 0.88rem;
+}
+
+.lucidchart-toolbar button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--steel);
+  background: var(--white);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.lucidchart-frame {
+  position: relative;
+  min-height: 620px;
+  padding: clamp(28px, 3vw, 40px);
+  overflow: auto;
+  background-color: #fbfcfd;
+  background-image:
+    linear-gradient(rgba(15, 93, 167, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 93, 167, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.lucidchart-frame iframe {
+  display: block;
+  width: 100%;
+  min-height: 620px;
+  border: 0;
+}
+
+.lucidchart-local-preview {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  min-width: 820px;
+  color: var(--steel);
+}
+
+.lucidchart-local-preview::before {
+  position: absolute;
+  top: 118px;
+  bottom: 190px;
+  left: 50%;
+  z-index: 0;
+  width: 2px;
+  background: #5b6570;
+  content: "";
+}
+
+.lucidchart-group {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
+  border: 2px solid #5b6570;
+  border-radius: 14px;
+  color: var(--steel);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 7px 16px rgba(12, 31, 48, 0.08);
+}
+
+.lucidchart-group h2 {
+  margin: 0;
+  color: #17345e;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.lucidchart-node {
+  display: grid;
+  gap: 2px;
+  min-height: 58px;
+  padding: 9px 12px;
+  align-content: center;
+  border-radius: 6px;
+  color: #ffffff;
+  background: linear-gradient(100deg, #55d8d4 0%, #0089d2 55%, #005cc5 100%);
+  box-shadow: 0 5px 12px rgba(0, 113, 200, 0.14);
+  text-align: center;
+}
+
+.lucidchart-node strong {
+  color: inherit;
+  font-size: 0.87rem;
+  line-height: 1.3;
+}
+
+.lucidchart-node span {
+  color: inherit;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.lucidchart-board-group {
+  width: 760px;
+}
+
+.lucidchart-director-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+}
+
+.lucidchart-tier {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+  width: 760px;
+  margin-top: 70px;
+}
+
+.lucidchart-tier::before {
+  position: absolute;
+  top: -36px;
+  left: calc((100% - 80px) / 4);
+  z-index: 1;
+  width: calc(50% + 42px);
+  height: 2px;
+  background: #5b6570;
+  content: "";
+}
+
+.lucidchart-tier .lucidchart-group::before {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  z-index: 1;
+  width: 2px;
+  height: 36px;
+  background: #5b6570;
+  content: "";
+}
+
+.lucidchart-role-list {
+  display: grid;
+  gap: 10px;
+}
+
+.lucidchart-role-only {
+  min-height: 58px;
+}
+
+.lucidchart-production-group {
+  width: 340px;
+  margin-top: 70px;
+}
+
+.lucidchart-production-group::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 2px;
+  height: 70px;
+  background: #5b6570;
+  content: "";
+}
+
+.lucidchart-production-list {
+  display: grid;
+  gap: 3px;
+  padding: 12px 16px 12px 30px;
+  border-radius: 6px;
+  color: #ffffff;
+  background: linear-gradient(100deg, #55d8d4 0%, #0089d2 55%, #005cc5 100%);
+}
+
+.lucidchart-production-list span {
+  position: relative;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.lucidchart-production-list span::before {
+  position: absolute;
+  top: 0.48em;
+  right: calc(100% + 8px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
 body[data-page="rivesa"] .rivesa-structure-preview {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
@@ -1702,97 +2071,6 @@ body[data-page="rivesa"] .rivesa-structure-preview .section-button {
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(244, 247, 250, 0.92)),
     radial-gradient(circle at 12% 12%, rgba(15, 93, 167, 0.07), transparent 28%),
     #f6f7f6;
-}
-
-.rivesa-team-board {
-  display: grid;
-  gap: clamp(38px, 5vw, 68px);
-  width: min(940px, 100%);
-  margin: 0 auto;
-}
-
-.rivesa-team-directors {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: clamp(36px, 8vw, 100px);
-}
-
-.rivesa-team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(240px, 1fr));
-  gap: clamp(42px, 7vw, 86px) clamp(36px, 8vw, 96px);
-}
-
-.rivesa-team-group {
-  display: grid;
-  align-content: start;
-  gap: 14px;
-}
-
-.rivesa-team-group h3 {
-  margin: 0 0 4px;
-  color: #17345e;
-  font-size: clamp(1.4rem, 2.5vw, 2.15rem);
-  font-weight: 500;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.rivesa-team-card {
-  display: grid;
-  place-items: center;
-  min-height: 62px;
-  padding: 10px 18px;
-  border-radius: 8px;
-  color: #ffffff;
-  background: linear-gradient(90deg, #5bd7d6 0%, #0071c8 100%);
-  box-shadow: 0 12px 22px rgba(15, 93, 167, 0.12);
-  text-align: center;
-}
-
-.rivesa-team-card h2,
-.rivesa-team-card h4,
-.rivesa-team-card p {
-  margin: 0;
-  color: inherit;
-  letter-spacing: 0;
-}
-
-.rivesa-team-card h2,
-.rivesa-team-card h4 {
-  font-size: clamp(1rem, 1.45vw, 1.22rem);
-  font-weight: 900;
-  line-height: 1.08;
-}
-
-.rivesa-team-card p {
-  margin-top: 4px;
-  font-size: clamp(0.95rem, 1.35vw, 1.12rem);
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.rivesa-production-team {
-  justify-self: center;
-  width: min(420px, 100%);
-}
-
-.rivesa-production-card {
-  place-items: start;
-  min-height: 150px;
-  padding: 22px 28px;
-  text-align: left;
-}
-
-.rivesa-production-card ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.rivesa-production-card li {
-  color: #ffffff;
-  font-size: clamp(0.95rem, 1.45vw, 1.16rem);
-  line-height: 1.28;
 }
 
 .rivesa-about {
@@ -1910,6 +2188,12 @@ body[data-page="rivesa"] .rivesa-structure-preview .section-button {
 
 .section-button {
   margin-top: 28px;
+}
+
+.section-button.button.primary:hover {
+  color: var(--white);
+  background: var(--red-dark);
+  border-color: var(--red-dark);
 }
 
 .product-note {
@@ -2450,38 +2734,38 @@ body[data-page="rivesa"] .contact-panel .whatsapp-button {
   color: var(--white);
 }
 
-footer {
+.company-footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   padding: 24px clamp(22px, 5vw, 72px);
   color: var(--muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  background: var(--brand-green-dark);
+  border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
   font-size: 0.84rem;
 }
 
-footer div,
-.footer-contact {
+.company-footer > div,
+.company-footer .footer-contact {
   display: grid;
   gap: 6px;
 }
 
-footer strong,
-footer span,
-footer address,
-footer a {
-  color: rgba(255, 255, 255, 0.76);
+.company-footer strong,
+.company-footer span,
+.company-footer address,
+.company-footer a {
+  color: var(--muted);
   font-style: normal;
 }
 
-footer strong {
-  color: var(--white);
+.company-footer strong {
+  color: var(--ink);
   font-size: 0.92rem;
 }
 
-footer a:hover {
-  color: var(--white);
+.company-footer a:hover {
+  color: var(--red);
 }
 
 .footer-contact {
@@ -2596,6 +2880,16 @@ footer a:hover {
     min-height: 66px;
   }
 
+  .rst-project-list article {
+    grid-template-columns: 42px 1fr;
+    padding: 18px;
+  }
+
+  .rst-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
   .brand strong {
     font-size: 0.86rem;
   }
@@ -2677,6 +2971,19 @@ footer a:hover {
     min-height: 300px;
   }
 
+  .lucidchart-embed {
+    margin-bottom: 42px;
+  }
+
+  .lucidchart-frame {
+    min-height: 520px;
+    padding: 28px 20px;
+  }
+
+  .lucidchart-local-preview {
+    min-width: 820px;
+  }
+
   .hero {
     min-height: 690px;
   }
@@ -2706,6 +3013,7 @@ footer a:hover {
   .page-card-grid,
   .client-project-grid,
   .service-list-wide,
+  .rst-project-list,
   .manpower-columns,
   .rivesa-project-list,
   .work-process,
@@ -2737,6 +3045,21 @@ footer a:hover {
 
   .company-panel h3 {
     margin-top: 78px;
+  }
+
+  .rst-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 210px;
+  }
+
+  .rst-gallery-feature,
+  .rst-gallery-wide,
+  .rst-gallery-video {
+    grid-column: span 1;
+  }
+
+  .rst-gallery-feature {
+    grid-row: span 1;
   }
 
   .work-process li,
@@ -2858,11 +3181,11 @@ footer a:hover {
     padding: 22px;
   }
 
-  footer {
+  .company-footer {
     display: grid;
   }
 
-  .footer-contact {
+  .company-footer .footer-contact {
     max-width: none;
     text-align: left;
   }
@@ -3755,15 +4078,6 @@ footer a:hover {
 
   html[lang="en"] body[data-page="rivesa"] .vision-large-label {
     font-size: 3.35rem;
-  }
-
-  .rivesa-team-directors,
-  .rivesa-team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .rivesa-team-board {
-    gap: 34px;
   }
 
   .rivesa-about-title {
